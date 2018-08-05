@@ -1,0 +1,53 @@
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  background-color: pink; }
+
+.container {
+  background-color: orangered;
+  width: 80%;
+  margin: 4rem auto; }
+
+.card {
+  /*
+  Card dimensions
+  background-color was for handling
+  perspective makes it real
+  position realive is for cards
+  */
+  height: 50rem;
+  width: 30rem;
+  background-color: green;
+  perspective: 100rem;
+  position: relative;
+  /*
+    hovering over the card element
+  */ }
+  .card__side {
+    backface-visibility: hidden;
+    height: 100%;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*
+      transition is for animation effect
+    */
+    transition: all .7s ease; }
+    .card__side--front {
+      width: 100%;
+      background-color: yellow; }
+    .card__side--back {
+      width: 100%;
+      background-color: white;
+      transform: rotateY(-180deg); }
+  .card:hover .card__side--front {
+    transform: rotateY(180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0deg); }

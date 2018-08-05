@@ -1,0 +1,54 @@
+
+.container{
+  background-color: orangered;
+  // height : 40vh;
+  width: 80%;
+  margin : 4rem auto;
+}
+.card{
+  /*
+  Card dimensions
+  background-color was for handling
+  perspective makes it real
+  position realive is for cards
+  */
+  height: 50rem;
+  width: 30rem;
+  background-color: green;
+  perspective: 100rem;
+  position: relative;
+  &__side{
+    backface-visibility: hidden;
+    height: 100%;
+    border-radius: 5px;
+    position: absolute;
+    top:0;
+    left:0;
+    /*
+      transition is for animation effect
+    */
+    transition: all .7s ease;
+
+    &--front{
+      width: 100%;
+      background-color: yellow;
+      // transition: all .7s;
+    }
+    &--back{
+      width: 100%;
+      // z-index: -1;
+      background-color: white;
+      transform: rotateY(-180deg);
+      // transition: all .7s;
+    }
+  }
+  /*
+    hovering over the card element
+  */
+  &:hover &__side--front{
+    transform: rotateY(180deg);
+  }
+  &:hover &__side--back{
+    transform: rotateY(0deg);
+  }
+}
