@@ -178,6 +178,9 @@ body {
   border-radius: 50%;
   position: relative;
   animation: circle 8s infinite linear; }
+  .circle:hover ~ .circle__image-box-1 {
+    margin-left: 10rem;
+    display: none; }
   .circle__image-box-1 {
     position: absolute;
     width: 4rem;
