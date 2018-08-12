@@ -233,17 +233,31 @@ body {
   border: 1px solid #ddd; }
   .table__hr {
     background-color: orange; }
-  .table_th {
+  .table__th {
     padding: 1.5rem; }
   .table__hr--sub {
     border: 1px solid #ddd;
     padding: 1.5rem; }
-  .table_tr {
+  .table__tr {
     text-align: center; }
-  .table_tc-1, .table_tc-2, .table_tc-3 {
+  .table__tc--1, .table__tc--2, .table__tc--3 {
     border: 1px solid #ddd;
-    padding: 15px; }
-  .table_tc-1:nth-of-type(even), .table_tc-3:nth-of-type(even) {
+    padding: 1.5rem;
+    position: relative; }
+  .table__tc--1:nth-of-type(even), .table__tc--3:nth-of-type(even) {
     background-color: #aaa; }
-  .table_tc-2:nth-of-type(odd) {
+  .table__tc--2:nth-of-type(odd) {
     background-color: #aaa; }
+  .table__text-style {
+    writing-mode: vertical-rl;
+    text-orientation: mixed; }
+  .table__link:visited, .table__link:link {
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    color: white;
+    font-size: 1.4rem; }

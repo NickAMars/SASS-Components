@@ -10,7 +10,7 @@
   &__hr{
     background-color: orange;
   }
-  &_th{
+  &__th{
     padding: 1.5rem;
       // text-align: center;
   }
@@ -18,23 +18,49 @@
     border: 1px solid #ddd;
     padding: 1.5rem;
   }
-  &_tr{ // rows
+  &__tr{ // rows
     // border: 1px solid #ddd;
     text-align: center;
   }
-  &_tc-1,&_tc-2,&_tc-3 {
+  &__tc--1,&__tc--2, &__tc--3 {
     border: 1px solid #ddd;
-    padding: 15px;
+    padding: 1.5rem;
+    position: relative;
   }
-  &_tc-1, &_tc-3{
+  &__tc--1, &__tc--3{
     &:nth-of-type(even){
       background-color: #aaa;
     }
   }
-  &_tc-2{
+  &__tc--2{
     &:nth-of-type(odd){
       background-color: #aaa;
     }
   }
-
+  &__text-style{
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+  }
+  &__tc--1{
+    // text-decoration: none;
+    // position: absolute;
+    // top:50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    // writing-mode: vertical-rl;
+    // text-orientation: mixed;
+    // color: white;
+    // font-size: 1.4rem;
+  }
+  &__link:visited,&__link:link {
+    text-decoration: none;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    color: white;
+    font-size: 1.4rem;
+  }
 }
