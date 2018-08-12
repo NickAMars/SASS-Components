@@ -225,3 +225,25 @@ body {
     transform: rotate(0); }
   100% {
     transform: rotate(360deg); } }
+
+.table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: 2rem auto;
+  border: 1px solid #ddd; }
+  .table__hr {
+    background-color: orange; }
+  .table_th {
+    padding: 1.5rem; }
+  .table__hr--sub {
+    border: 1px solid #ddd;
+    padding: 1.5rem; }
+  .table_tr {
+    text-align: center; }
+  .table_tc-1, .table_tc-2, .table_tc-3 {
+    border: 1px solid #ddd;
+    padding: 15px; }
+  .table_tc-1:nth-of-type(even), .table_tc-3:nth-of-type(even) {
+    background-color: #aaa; }
+  .table_tc-2:nth-of-type(odd) {
+    background-color: #aaa; }

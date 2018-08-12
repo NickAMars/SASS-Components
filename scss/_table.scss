@@ -1,0 +1,40 @@
+
+
+
+.table{
+  border-collapse: collapse;
+  width: 80%;
+  margin : 2rem auto;
+  border: 1px solid #ddd;
+
+  &__hr{
+    background-color: orange;
+  }
+  &_th{
+    padding: 1.5rem;
+      // text-align: center;
+  }
+  &__hr--sub{
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+  }
+  &_tr{ // rows
+    // border: 1px solid #ddd;
+    text-align: center;
+  }
+  &_tc-1,&_tc-2,&_tc-3 {
+    border: 1px solid #ddd;
+    padding: 15px;
+  }
+  &_tc-1, &_tc-3{
+    &:nth-of-type(even){
+      background-color: #aaa;
+    }
+  }
+  &_tc-2{
+    &:nth-of-type(odd){
+      background-color: #aaa;
+    }
+  }
+
+}
