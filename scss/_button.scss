@@ -1,14 +1,23 @@
 
 .container-btns{
-  background-color: #000;
+  background-color: #777;
   padding: 2rem;
   margin: 2rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items:  center;
 }
 .btn{
   border:none;
   padding: 1rem 2rem;
   font-size: 1.8rem;
+  &:not(:last-child){
+    margin-bottom: 1rem;
+  }
+  &:focus{
+    outline: none;
+  }
 
   /*
   Flash created to have a shiny effect
@@ -73,4 +82,37 @@
       opacity: .4;
     }
   }
+
+  &-circle{
+    border-radius: 50%;
+    height : 4rem;
+    width: 4rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: orange;
+    cursor: cell;
+    // border: 2px solid #000;
+  }
+  &-tri{
+    height: 4rem;
+    width:5rem;
+    -webkit-clip-path: polygon(50% 0, 100% 50% , 50% 100%, 0 50%);
+    clip-path: polygon(50% 0, 100% 50% , 50% 100%, 0 50%);
+    background-color: purple;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    cursor: crosshair;
+    // keep in the text inside of the button
+    span{
+      font-size: 1.2rem;
+    }
+    // font-size: 1.4rem;
+  }
+}
+::selection{
+  background-color: orange;
+  color: purple;
 }

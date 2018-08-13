@@ -94,10 +94,13 @@ body {
     transform: rotateY(0deg); }
 
 .container-btns {
-  background-color: #000;
+  background-color: #777;
   padding: 2rem;
   margin: 2rem;
-  text-align: center; }
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .btn {
   border: none;
@@ -106,6 +109,10 @@ body {
   /*
   Flash created to have a shiny effect
   */ }
+  .btn:not(:last-child) {
+    margin-bottom: 1rem; }
+  .btn:focus {
+    outline: none; }
   .btn-flash {
     color: #ccc;
     display: inline-block;
@@ -158,6 +165,32 @@ body {
     .btn-flash:hover:after {
       transform: translateX(8rem) skewX(15deg);
       opacity: .4; }
+  .btn-circle {
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: orange;
+    cursor: cell; }
+  .btn-tri {
+    height: 4rem;
+    width: 5rem;
+    -webkit-clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+    background-color: purple;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    cursor: crosshair; }
+    .btn-tri span {
+      font-size: 1.2rem; }
+
+::selection {
+  background-color: orange;
+  color: purple; }
 
 .container-circle {
   max-width: 120rem;
