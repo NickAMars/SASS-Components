@@ -1,0 +1,12 @@
+
+
+/* (css) Periscope */
+.large-window{
+  height: 600px;
+  background-image: url(/image/model.jpg);
+  background-position: center 0px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin-top: 10px;
+  border-radius: 50%;
+}

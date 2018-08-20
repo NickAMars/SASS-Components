@@ -6,7 +6,6 @@
   "scripts": {
     "watch:scss": "node-sass scss/main.scss css/style.css -w",
     "devserver": "live-server",
-
     "start": "npm-run-all --parallel devserver watch:scss",
     "compile:sass": "node-sass scss/main.scss css/style.comp.css",
     "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" css/style.comp.css -o css/style.prefix.css",
