@@ -295,7 +295,7 @@ body {
     color: white;
     font-size: 1.4rem; }
 
-.scene {
+.carousel-container {
   border: 1px solid #CCC;
   margin: 40px 0;
   position: relative;
@@ -387,3 +387,88 @@ body {
   position: relative;
   z-index: 2;
   background: rgba(255, 255, 255, 0.8); }
+
+.cube-container {
+  width: 20rem;
+  height: 20rem;
+  margin: 8rem auto;
+  perspective: 400px; }
+
+.cube {
+  width: 20rem;
+  height: 20rem;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: translateZ(-100px);
+  transition: transform 1s; }
+
+.cube.show-front {
+  transform: translateZ(-100px) rotateY(0deg); }
+
+.cube.show-right {
+  transform: translateZ(-100px) rotateY(-90deg); }
+
+.cube.show-back {
+  transform: translateZ(-100px) rotateY(-180deg); }
+
+.cube.show-left {
+  transform: translateZ(-100px) rotateY(90deg); }
+
+.cube.show-top {
+  transform: translateZ(-100px) rotateX(-90deg); }
+
+.cube.show-bottom {
+  transform: translateZ(-100px) rotateX(90deg); }
+
+.cube__face {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  line-height: 200px;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  text-align: center; }
+
+.cube__face--front {
+  background: rgba(255, 0, 0, 0.7); }
+
+.cube__face--right {
+  background: rgba(255, 255, 0, 0.7); }
+
+.cube__face--back {
+  background: rgba(0, 255, 0, 0.7); }
+
+.cube__face--left {
+  background: rgba(0, 255, 255, 0.7); }
+
+.cube__face--top {
+  background: rgba(0, 0, 255, 0.7); }
+
+.cube__face--bottom {
+  background: rgba(255, 0, 255, 0.7); }
+
+.cube__face--front {
+  transform: rotateY(0deg) translateZ(100px); }
+
+.cube__face--right {
+  transform: rotateY(90deg) translateZ(100px); }
+
+.cube__face--back {
+  transform: rotateY(180deg) translateZ(100px); }
+
+.cube__face--left {
+  transform: rotateY(-90deg) translateZ(100px); }
+
+.cube__face--top {
+  transform: rotateX(90deg) translateZ(100px); }
+
+.cube__face--bottom {
+  transform: rotateX(-90deg) translateZ(100px); }
+
+label {
+  margin-right: 10px; }
+
+.radio-group {
+  text-align: center; }
