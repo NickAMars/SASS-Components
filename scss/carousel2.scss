@@ -1,0 +1,116 @@
+
+      
+
+$xsBreak : 480px ;
+$smBreak : 768px ;
+$mdBreak : 992px ;
+$lrgBreak : 1200px ;
+
+
+#service-carousel{
+ .carousel-fade {
+        .carousel-inner {
+            .item {
+                transition-property: opacity;
+            }
+            
+            .item,
+            .active.left,
+            .active.right {
+                opacity: 0;
+            }
+
+            .active,
+            .next.left,
+            .prev.right {
+                opacity: 1;
+            }
+
+            .next,
+            .prev,
+            .active.left,
+            .active.right {
+                left: 0;
+                transform: translate3d(0, 0, 0);
+            }
+        }
+
+        .carousel-control {
+            z-index: 2;
+        }
+    }
+    .carousel-car{
+      background: #1d5b7e;
+      font-family: 'Maven Pro', sans-serif;
+
+      @media (max-width: 768px){
+        width:100%;
+       /*height:360px;*/
+      }
+    }
+    .carousel-indicators {
+      right: 20px;
+      left: auto;
+      width: auto;
+    }
+    .carousel-caption  h3{
+      font-size: 29px;
+      text-shadow: none;
+      @media (max-width: $lrgBreak){
+        font-size: 23px;
+      }  
+      @media (max-width: $mdBreak){
+        font-size: 18px;
+      }  
+      @media (max-width: $smBreak){
+        font-size: 16px;
+      }
+    } 
+    .carousel-caption {
+     /*position: relative;*/
+      left: auto;
+      right: 0;
+      top: 0;
+      padding-bottom: 40px;
+      padding-top: 40px;
+      text-align: left;
+      font-size: 18px;
+      text-shadow: none;
+      @media (max-width: $lrgBreak){
+        font-size: 16px;
+        padding-top: 20px;
+      }
+      @media (max-width: $mdBreak){
+        padding-top: 15px;     
+        font-size: 12px;
+      }
+       @media (max-width: $smBreak){
+        display: block;
+        position: relative;
+        padding-top: 5px;
+        padding-bottom: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+    .item img{
+      width: 670px;
+      height: 464px;
+      max-width: 58% !important;
+      @media (max-width: $mdBreak){
+        width: 435px;
+        height: 302px;
+        max-width: 58% !important;
+      }
+       @media (max-width: $smBreak){
+        width: 100%;
+        display:block;
+        height: 361px;
+        max-width:100% !important;
+      }
+    }
+
+  
+
+
+}
