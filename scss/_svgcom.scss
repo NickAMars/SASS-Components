@@ -1,12 +1,41 @@
-
-
+// SVG AWESOME
 svg{
-  height: 100%;
+  // height: 400px;
 }
 .svg-container{
   // height: 40rem;
   // width: 40rem;
-  height:300px;
-  width:200px;
-  margin: 10rem auto;
+  // height:300px;
+  width:150px;
+  margin: 2rem 1rem;
+  // background-color: orange;
+}
+
+.svg-text__container{
+  width:800px;
+  height: 200px;
+  margin: 2rem auto;
+  // background-color: orangered;
+  // font-family:"Lobster";
+}
+
+.img_svg1{
+  width: 800px;
+  height: 200px;
+    // background-color: orangered;
+  // object-fit: contain;
+  clip-path: url(#svgTextPath);
+}
+.img_svg2{
+  width: 100%;
+  height: 100%;
+    // background-color: orangered;
+  // object-fit: contain;
+  clip-path: url(#svgPath);
+}
+
+.svg-bubbles__container{
+  width:100%;
+  height: 500px;
+  margin: 2rem auto;
 }
